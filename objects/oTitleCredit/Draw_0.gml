@@ -23,13 +23,13 @@ if(!credit){
 	draw_sprite(sprite_index, image_index, x, y);
 	
 	//Programming & Composer
-	draw_text(RES_W_HALF, CREDIT * 02, "~ Programming ~");
+	draw_text(RES_W_HALF, CREDIT * 02, "- Programming -");
 	draw_text(RES_W_HALF, CREDIT * 03, "LolinEagle");
-	draw_text(RES_W_HALF, CREDIT * 05, "~ Composer ~");
+	draw_text(RES_W_HALF, CREDIT * 05, "- Composer -");
 	draw_text(RES_W_HALF, CREDIT * 06, "CrazyBoyo");
 	
 	//Soundtrack
-	draw_text(RES_W_HALF, CREDIT * 08, "~ Soundtrack ~");
+	draw_text(RES_W_HALF, CREDIT * 08, "- Soundtrack -");
 	scDrawSet(fRoboto24, fa_left, fa_bottom);
 	draw_text(RES_W_HALF / 1.5, CREDIT * 09, "Kalte Ohren - Alex");
 	draw_text(RES_W_HALF / 1.5, CREDIT * 10, "Kalte Ohren - Septahelix");

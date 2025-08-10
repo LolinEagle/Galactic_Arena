@@ -19,7 +19,7 @@
 #macro OFFSET_Y 384
 
 //Title & Tile Beam & Balancing
-#macro VERSION "v 1.1.0.1"
+#macro VERSION "v 1.2.0"
 #macro CREDIT RES_H / 13
 #macro SPAWN_RATE 1.5
 #macro BONUS_BOSS 32

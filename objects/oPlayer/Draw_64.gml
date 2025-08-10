@@ -20,10 +20,8 @@ if(!global.gamePaused){
 
 		//Multishot
 		draw_set_font(fRoboto12);
-		if(multishot > 0){
-			draw_set_color(c_orange);
-			draw_text(8, 66, "Multishot : " + string(multishot));
-		}
+		draw_set_color(c_orange);
+		draw_text(8, 66, "Multishot : " + string(multishot));
 	}else{
 		//Heal Player
 		scHealPlayer();
