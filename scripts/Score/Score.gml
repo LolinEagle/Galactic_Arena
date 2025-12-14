@@ -1,5 +1,5 @@
 function scScore(_targetRoom, _score, _pasiMin, _pasiSec){
-	//Pacifism
+	// Pacifism
 	if(!global.levelEnded && global.theScore = 0){
 		global.pacifismSec += 1 / FPS;
 		if(global.pacifismSec >= 60){
@@ -8,14 +8,14 @@ function scScore(_targetRoom, _score, _pasiMin, _pasiSec){
 		}
 	}
 	
-	//Level Ended
+	// Level Ended
 	var _p = global.pacifismMin >= _pasiMin && global.pacifismSec >= _pasiSec;
 	if(global.theScore >= _score || _p || global.levelEnded){
 		layer_destroy_instances("LayerEnnemie1");
 		layer_destroy_instances("LayerEnnemie2");
 		if(global.pacifismSec < 0.1){global.pacifismSec = 0;}
 		
-		//Level Ended
+		// Level Ended
 		global.levelEnded = true;
 		if(++global.iLevelEnded = FPS * 5){
 			global.levelEnded = false;
@@ -31,7 +31,7 @@ function scScoreRoomStart(_soundtrack, _text, _bonusX, _bonusY){
 	with(instance_create_layer(x, y, layer, oText)){text = string(_text);}
 	with(oScore){ennemieSlugger = FPS * 30;}
 	
-	//Bonus Spawn
+	// Bonus Spawn
 	with(instance_create_layer(x, y, layer, oSpawnBonus)){
 		x1 = _bonusX;
 		y1 = _bonusY;
@@ -43,7 +43,7 @@ function scScoreRoomStart(_soundtrack, _text, _bonusX, _bonusY){
 function scScoreRoomStartLight(_soundtrack, _text){
 	audio_play_sound(_soundtrack, 0, true);
 	
-	//Text
+	// Text
 	with(instance_create_layer(x, y, layer, oText)){
 		yy = 200;
 		text = string(_text);
@@ -53,11 +53,11 @@ function scScoreRoomStartLight(_soundtrack, _text){
 function scScorePacifisme(){
 	draw_set_font(fRoboto24);
 	
-	//Color
+	// Color
 	if(global.theScore = 0 && !slowPacifisme){draw_set_colour(c_aqua);}
 	else{draw_set_colour(c_maroon);}
 	
-	//Pacifism
+	// Pacifism
 	if(global.pacifismMin >= 1 || global.pacifismSec > 20){
 		var _s0 = "Pacifisme : " + string(global.pacifismMin);
 		var _s1 = string(global.pacifismSec) + " / ";

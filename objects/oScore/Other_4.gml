@@ -16,7 +16,7 @@ if(room == rEndless){
 
 #region World 1
 if(room == rLevel1_1){
-	//First life set
+	// First life set
 	global.healPlayer = 100;
 	
 	scScoreRoomStart(snLevel01, "Level 1 - 1\nObjective : 100", 832, 576);
@@ -154,10 +154,10 @@ if(room == rBoss3){
 }#endregion
 
 if(room == rCredit){
-	//Music
+	// Music
 	audio_play_sound(snCredit, 0, false);
 	
-	//Endless
+	// Endless
 	global.gameEndless = true;
 	ini_open(OPTION);
 	ini_write_real("End", "Endless", global.gameEndless);

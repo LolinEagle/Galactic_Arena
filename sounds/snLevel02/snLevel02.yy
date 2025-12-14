@@ -1,15 +1,17 @@
 {
-  "$GMSound":"",
+  "$GMSound":"v2",
   "%Name":"snLevel02",
   "audioGroupId":{
     "name":"OST",
     "path":"audiogroups/OST",
   },
   "bitDepth":1,
-  "bitRate":128,
+  "channelFormat":0,
   "compression":0,
+  "compressionQuality":4,
   "conversionMode":0,
   "duration":45.04817,
+  "exportDir":"",
   "name":"snLevel02",
   "parent":{
     "name":"OST",
@@ -20,6 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"snLevel02.mp3",
-  "type":0,
   "volume":1.0,
 }

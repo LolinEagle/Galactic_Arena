@@ -1,7 +1,7 @@
 if(!global.gamePaused && active){
 	image_angle = point_direction(x, y, oPlayer.x, oPlayer.y);
 
-	//Shot
+	// Shot
 	if(--rateOfFire <= 0){
 		var _x = x + lengthdir_x(96, image_angle);
 		var _y = y + lengthdir_y(96, image_angle);
@@ -13,6 +13,6 @@ if(!global.gamePaused && active){
 		rateOfFire = FPS * 0.5;
 	}
 	
-	//Collision with Player
+	// Collision with Player
 	scEnnemieMelee();
 }

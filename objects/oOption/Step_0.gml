@@ -1,7 +1,7 @@
 ///@desc Option Logic
 scCameraGetView();
 
-//Check if selected
+// Check if selected
 var _mouseLeft = mouse_check_button(mb_left);
 if(_mouseLeft && place_meeting(x, y, oCursor)){selected = true;}
 if(!_mouseLeft){selected = false;}

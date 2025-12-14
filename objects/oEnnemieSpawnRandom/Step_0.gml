@@ -1,6 +1,6 @@
 ///@desc Spawn
 if(!global.gamePaused){
-	//Ennemie Spawn
+	// Ennemie Spawn
 	if(ennemie){
 		spawnRandom--;
 		if(spawnRandom <= 0 || recreateEnnemie){
@@ -13,7 +13,7 @@ if(!global.gamePaused){
 		}
 	}
 	
-	//Ennemie Gunner
+	// Ennemie Gunner
 	if(ennemieGunner){
 		spawnGunner--;
 		if(spawnGunner <= 0 || recreateGunner){
@@ -23,7 +23,7 @@ if(!global.gamePaused){
 		}
 	}
 	
-	//Ennemie Healer
+	// Ennemie Healer
 	if(ennemieHealer){
 		spawnHealer--;
 		if(spawnHealer <= 0 || recreateHealer){

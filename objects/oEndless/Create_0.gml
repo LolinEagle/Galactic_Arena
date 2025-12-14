@@ -1,15 +1,15 @@
 ///@desc Endless Setup
 
-//Variable
+// Variable
 endlessScore = 0;
 endlessPacifism = 0;
 phase = 0;
 
-//Setup
+// Setup
 scScoreRoomStart(snEndless, "Level Endless", OFFSET_X, OFFSET_Y);
 with(oScore){ennemieSlugger = -1;}
 
-//Ennemie Spawn Random
+// Ennemie Spawn Random
 endlessEnnemie = instance_create_layer(x, y, layer, oEnnemieSpawnRandom);
 with(endlessEnnemie){
 	x1 = OFFSET_X;
@@ -18,7 +18,7 @@ with(endlessEnnemie){
 	y2 = room_height - y1;
 }
 
-//Text Ennemie
+// Text Ennemie
 textEnnemie = array_create(4);
 textEnnemie[0] = "- Ennemie -\nSpawn Random\nSpawner\nGunner";
 textEnnemie[1] = "- Ennemie -\nSpawn Random\nHealer\nTurret";

@@ -4,9 +4,9 @@ x = mouse_x;
 y = mouse_y;
 scCameraGetView();
 
-//Teleportation Security
+// Teleportation Security
 if(!global.gamePaused){
-	//Normale state & Boss2
+	// Normale state & Boss2
 	if(!instance_exists(oBoss2)){
 		if(
 			x <= OFFSET_X || x >= room_width - OFFSET_X
@@ -28,7 +28,7 @@ if(!global.gamePaused){
 		}
 	}
 	
-	//Boss1
+	// Boss1
 	if(instance_exists(oBoss1)){
 		if(point_distance(x, y, oBoss1.x, oBoss1.y) < 256){
 			TP_SECURITY

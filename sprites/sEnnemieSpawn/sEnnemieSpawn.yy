@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sEnnemieSpawn",
   "bboxMode":2,
   "bbox_bottom":79,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c6da870e-d191-4352-9f0f-59d97bce4b39","name":"c6da870e-d191-4352-9f0f-59d97bce4b39","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c6da870e-d191-4352-9f0f-59d97bce4b39","name":"c6da870e-d191-4352-9f0f-59d97bce4b39","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

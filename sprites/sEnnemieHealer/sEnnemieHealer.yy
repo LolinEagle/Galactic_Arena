@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sEnnemieHealer",
   "bboxMode":2,
   "bbox_bottom":107,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"9bff8774-3aeb-449b-9428-30b8e7d6cc44","name":"9bff8774-3aeb-449b-9428-30b8e7d6cc44","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"6e959dc2-130e-49f1-b898-05e766589926","name":"6e959dc2-130e-49f1-b898-05e766589926","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9bff8774-3aeb-449b-9428-30b8e7d6cc44","name":"9bff8774-3aeb-449b-9428-30b8e7d6cc44","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6e959dc2-130e-49f1-b898-05e766589926","name":"6e959dc2-130e-49f1-b898-05e766589926","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

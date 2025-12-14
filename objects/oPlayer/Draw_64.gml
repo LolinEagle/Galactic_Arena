@@ -2,14 +2,14 @@
 if(!global.gamePaused){
 	scDrawSet(fRoboto24, fa_left, fa_top);
 	
-	//If not Labyrinth
+	// If not Labyrinth
 	if(room != rLevel1_3 && room != rLevel2_3 && room != rLevel3_3){
 		draw_sprite(sHudHeal, 0, 0, 0);
 
-		//Heal Player
+		// Heal Player
 		scHealPlayer();
 
-		//Teleportation
+		// Teleportation
 		draw_set_font(fRoboto18);
 		draw_set_color(c_white);
 		draw_text(8, 40, "Beam");
@@ -18,12 +18,12 @@ if(!global.gamePaused){
 			c_white, c_black, c_black, 1, true, false
 		);
 
-		//Multishot
+		// Multishot
 		draw_set_font(fRoboto12);
 		draw_set_color(c_orange);
 		draw_text(8, 66, "Multishot : " + string(multishot));
 	}else{
-		//Heal Player
+		// Heal Player
 		scHealPlayer();
 	}
 }

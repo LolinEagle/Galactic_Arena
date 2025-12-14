@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sBonusHeal",
   "bboxMode":0,
   "bbox_bottom":60,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"721b04a6-1c46-4dd3-8605-ab1adb765e6f","name":"721b04a6-1c46-4dd3-8605-ab1adb765e6f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"721b04a6-1c46-4dd3-8605-ab1adb765e6f","name":"721b04a6-1c46-4dd3-8605-ab1adb765e6f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

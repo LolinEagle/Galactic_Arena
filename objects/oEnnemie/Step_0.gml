@@ -1,7 +1,7 @@
 ///@desc Ennemie logic
 if(!global.gamePaused){
 	if(!instance_exists(oBoss2)){
-		//Normal Logic
+		// Normal Logic
 		switch(hp){
 			case 3:
 				image_index = 0; image_xscale = 1.00; image_yscale = 1.00;
@@ -17,14 +17,14 @@ if(!global.gamePaused){
 				break;
 		}
 		
-		//Pathfinding
+		// Pathfinding
 		mp_potential_step_object(oPlayer.x, oPlayer.y, speed, oEnnemieWall);
 		if(x = oPlayer.x && y = oPlayer.y){speed = 0;}
 	}else{
-		//Boss 2 Logic
+		// Boss 2 Logic
 		speed = speedBoss;
 		
-		//Heal logic
+		// Heal logic
 		if(hp = 2 && !hp2){
 			image_index = 1; image_xscale = 0.85; image_yscale = 0.85;
 			direction = point_direction(x, y, oPlayer.x, oPlayer.y);
@@ -55,6 +55,6 @@ if(!global.gamePaused){
 		}instance_destroy();
 	}
 
-	//Collision with Player
+	// Collision with Player
 	scEnnemieMelee();
 }

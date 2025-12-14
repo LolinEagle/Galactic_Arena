@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sBoss3Ring",
   "bboxMode":2,
   "bbox_bottom":576,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e2545b29-6cce-4923-bcf5-85245346e867","name":"e2545b29-6cce-4923-bcf5-85245346e867","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e2545b29-6cce-4923-bcf5-85245346e867","name":"e2545b29-6cce-4923-bcf5-85245346e867","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

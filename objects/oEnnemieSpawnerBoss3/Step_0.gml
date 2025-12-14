@@ -5,6 +5,6 @@ if(!global.gamePaused){
 		spawnFixed = FPS * 20;
 	}
 	
-	//Collision with Player
+	// Collision with Player
 	scEnnemieMelee();
 }

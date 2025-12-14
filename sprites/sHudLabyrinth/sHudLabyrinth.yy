@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sHudLabyrinth",
   "bboxMode":0,
   "bbox_bottom":98,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"6fbc4c38-d06e-47c6-ad96-105dd087d7b4","name":"6fbc4c38-d06e-47c6-ad96-105dd087d7b4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6fbc4c38-d06e-47c6-ad96-105dd087d7b4","name":"6fbc4c38-d06e-47c6-ad96-105dd087d7b4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

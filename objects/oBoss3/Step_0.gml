@@ -1,7 +1,7 @@
 ///@desc Final Boss Logic
 if(!global.gamePaused){
 	if(!global.levelEnded){
-		//Built in variable
+		// Built in variable
 		if(!charge){
 			xP = oPlayer.x
 			yP = oPlayer.y
@@ -9,7 +9,7 @@ if(!global.gamePaused){
 		}
 		image_angle = direction;
 		
-		//Speed
+		// Speed
 		if(point_distance(x, y, oPlayer.x, oPlayer.y) < 64){
 			speed = 0;
 		}else{
@@ -17,7 +17,7 @@ if(!global.gamePaused){
 			else{speed = 6.0;}
 		}
 		
-		//Charge the player
+		// Charge the player
 		if(phaseTwo){
 			if(++iCharge >= FPS * (chargeTime - 0.5)){
 				charge = true;
@@ -32,14 +32,14 @@ if(!global.gamePaused){
 			}
 		}
 		
-		//Ring
+		// Ring
 		if(++iRing >= FPS * 6){
 			with(Ring){iDir = 90;}
 			iRing = 0;
 		}
 
 		#region End
-		//Phase 1
+		// Phase 1
 		with(Ring){x = oBoss3.x; y = oBoss3.y;}
 		with(Spawner){
 			x = oBoss3.x + lengthdir_x(160, oBoss3.direction + 180);
@@ -50,7 +50,7 @@ if(!global.gamePaused){
 			y = oBoss3.y + lengthdir_y(160, oBoss3.direction + iDir);
 		}
 		
-		//Phase 2
+		// Phase 2
 		if(phaseTwo){
 			with(Turret1){if(iDir < 90)iDir += 0.5;}
 			with(Turret2){
@@ -59,7 +59,7 @@ if(!global.gamePaused){
 			}
 		}
 		
-		//Phase 3
+		// Phase 3
 		if(phaseThree){
 			with(Turret3){
 				x = oBoss3.x + lengthdir_x(160, oBoss3.direction);
@@ -67,13 +67,13 @@ if(!global.gamePaused){
 			}
 		}
 		
-		//Collision with Player
+		// Collision with Player
 		scEnnemieMelee();
 		
-		//Final Boss Die
+		// Final Boss Die
 		if(global.healBoss <= 0 && room != rEndless){global.levelEnded = true;}
 		
-		//Final Boss Die in Endless
+		// Final Boss Die in Endless
 		if(room == rEndless){
 			if(global.healBoss <= 0){phaseEndless = true;}
 			if(oEndless.endlessPacifism < 15 && global.theScore = 0){
@@ -82,12 +82,12 @@ if(!global.gamePaused){
 		}#endregion
 	}
 
-	//If Final Boss Die
+	// If Final Boss Die
 	if(global.levelEnded){
 		speed = 0;
 		
 		if(global.healBoss <= 0){
-			//Explosion
+			// Explosion
 			if(++iFx = FPS / 3 && global.iLevelEnded < FPS * 3){
 				audio_play_sound(snExplosion, 0, false);
 				effect_create_above(
@@ -100,7 +100,7 @@ if(!global.gamePaused){
 				iFx = 0;
 			}
 		}else{
-			//Pacifism
+			// Pacifism
 			if(++iFx = FPS / 3 && global.iLevelEnded < FPS * 3){
 				audio_play_sound(snTeleportation, 0, false);
 				effect_create_above(
@@ -115,7 +115,7 @@ if(!global.gamePaused){
 		}
 	}
 	
-	//If Final Boss Die in Endless
+	// If Final Boss Die in Endless
 	if(phaseEndless){
 		speed = 0;
 		iEndless++;
@@ -127,7 +127,7 @@ if(!global.gamePaused){
 		with(Turret3){instance_destroy();}
 		
 		if(global.healBoss <= 0){
-			//Explosion
+			// Explosion
 			if(++iFx = FPS / 3 && iEndless < FPS * 3){
 				audio_play_sound(snExplosion, 0, false);
 				effect_create_above(
@@ -140,7 +140,7 @@ if(!global.gamePaused){
 				iFx = 0;
 			}
 		}else{
-			//Pacifism
+			// Pacifism
 			if(++iFx = FPS / 3 && iEndless < FPS * 3){
 				audio_play_sound(snTeleportation, 0, false);
 				effect_create_above(

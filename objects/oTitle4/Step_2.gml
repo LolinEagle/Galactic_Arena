@@ -6,7 +6,7 @@ if(selected && mouse_check_button_pressed(mb_left)){
 		y = 592;
 		layer_background_index(_titleBack, 1);
 		
-		//Instance Deactivate
+		// Instance Deactivate
 		instance_deactivate_layer("LayerTitle");
 		instance_deactivate_object(oTitle1);
 		instance_deactivate_object(oTitle2);
@@ -18,7 +18,7 @@ if(selected && mouse_check_button_pressed(mb_left)){
 		y = ystart;
 		layer_background_index(_titleBack, 0);
 		
-		//Instance Activate
+		// Instance Activate
 		instance_activate_layer("LayerTitle");
 		instance_activate_object(oTitle1);
 		instance_activate_object(oTitle2);

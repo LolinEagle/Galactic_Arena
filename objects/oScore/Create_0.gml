@@ -1,15 +1,15 @@
 ///@desc Variable Definitions
 
-//LevelEnded
+// LevelEnded
 global.levelEnded = false;
 global.iLevelEnded = 0;
 
-//Ennemie
+// Ennemie
 global.ennemieSpawner = 0;
 ennemieSlugger = -1;
 slowPacifisme = false;
 
-//Score
+// Score
 global.theScore = 0;
 global.pacifismMin = 0;
 global.pacifismSec = 0;

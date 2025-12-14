@@ -1,6 +1,6 @@
 scCameraGetView();
 
-//Check if selected
+// Check if selected
 if(
 	mouse_check_button_pressed(mb_left)
 	&& point_in_rectangle(oCursor.x, oCursor.y, x - 48, y - 48, x + 48, y + 48)
@@ -11,7 +11,7 @@ if(selected){
 	image_index = 1;
 	var newKey = keyboard_key;
 
-	//New Key
+	// New Key
 	switch(newKey){
 		case global.gameUp: break;
 		case global.gameDown: break;

@@ -8,7 +8,7 @@ if(
 ){
 	global.gamePaused = true;
 	
-	//Stop image_speed and speed
+	// Stop image_speed and speed
 	if(global.gamePaused){
 		with(all){
 			image_speed = 0;

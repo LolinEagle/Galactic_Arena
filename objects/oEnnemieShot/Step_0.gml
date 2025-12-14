@@ -13,14 +13,14 @@ if(!global.gamePaused){
 		instance_destroy();
 	}
 
-	//Ennemie Wall
+	// Ennemie Wall
 	if(place_meeting(x, y, oEnnemieWall)){
 		with(instance_place(x, y, oEnnemieWall)){
 			if(!canPass){instance_destroy(other);}
 		}
 	}
 
-	//Collision with Player
+	// Collision with Player
 	if(place_meeting(x, y, oPlayer)){
 		if(global.playerFrame <= 0){
 			global.healPlayerFrame++;
@@ -30,7 +30,7 @@ if(!global.gamePaused){
 		instance_destroy();
 	}
 
-	//Collision with Ennemie Spawner
+	// Collision with Ennemie Spawner
 	if(place_meeting(x, y, oEnnemieSpawner)){
 		with(instance_place(x, y, oEnnemieSpawner)){flash = FPS / 10;}
 		instance_destroy();

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sBonusTeleportation",
   "bboxMode":0,
   "bbox_bottom":60,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"22eae006-6aa0-4e83-84c3-a09c9d0c740f","name":"22eae006-6aa0-4e83-84c3-a09c9d0c740f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"22eae006-6aa0-4e83-84c3-a09c9d0c740f","name":"22eae006-6aa0-4e83-84c3-a09c9d0c740f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

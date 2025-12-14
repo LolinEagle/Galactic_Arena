@@ -1,6 +1,6 @@
 ///@desc Spawn Ennemie
 if(!global.gamePaused){
-	//Spawn
+	// Spawn
 	if(--spawnFixed <= 0){
 		if(
 			instance_exists(oBoss2)
@@ -13,10 +13,10 @@ if(!global.gamePaused){
 		spawnFixed = (FPS * global.ennemieSpawner) * SPAWN_RATE * spawnBoss;
 	}
 	
-	//Collision with Player
+	// Collision with Player
 	scEnnemieMelee();
 	
-	//For Boss 2
+	// For Boss 2
 	if(instance_exists(oBoss2)){
 		if(global.bonusBoss >= BONUS_BOSS){
 			global.bonusBoss -= BONUS_BOSS;

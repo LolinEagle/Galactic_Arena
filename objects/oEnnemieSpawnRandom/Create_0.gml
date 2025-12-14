@@ -1,23 +1,23 @@
 ///@desc Spawn Variable
 
-//Ennemie
+// Ennemie
 ennemie = true;
 recreateEnnemie = false;
 spawnRandom = FPS;
 
-//Ennemie Gunner
+// Ennemie Gunner
 ennemieGunner = false;
 recreateGunner = false;
 spawnGunner = FPS;
 rateGunner = 10;
 
-//Ennemie Gunner
+// Ennemie Gunner
 ennemieHealer = false;
 recreateHealer = false;
 spawnHealer = FPS;
 rateHealer = 10;
 
-//Ennemie Rusher
+// Ennemie Rusher
 ennemieRusher = false;
 recreateRusher = false;
 spawnRusher = FPS;

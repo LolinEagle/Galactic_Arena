@@ -3,7 +3,7 @@ if(!global.gamePaused){
 	image_angle = point_direction(x, y, oPlayer.x, oPlayer.y);
 
 	if(image_xscale < 1 && HealerOn = false){
-		//HealeOff
+		// HealeOff
 		image_xscale += 1 / FPS;
 		image_yscale += 1 / FPS;
 		if(place_meeting(x, y, oEnnemieWall)){
@@ -11,15 +11,15 @@ if(!global.gamePaused){
 			instance_destroy();
 		}
 	}else{
-		//HealeOn
+		// HealeOn
 		HealerOn = true;
 		if(point_distance(x, y, oPlayer.x, oPlayer.y) < DIAGONAL){
 			if(--rateOfFire <= 0){
-				//Audio & Effect
+				// Audio & Effect
 				audio_play_sound(snHealer, 0, 0);
 				effect_create_above(ef_ring, x, y, DIAGONAL, c_red);
 			
-				//Heal & Reset
+				// Heal & Reset
 				var _list = ds_list_create();
 				var _num = collision_circle_list(
 					x, y, DIAGONAL, pEnnemie, false, true, _list, false
@@ -36,7 +36,7 @@ if(!global.gamePaused){
 			}
 		}
 	
-		//Heal
+		// Heal
 		switch(hp){
 			case 5: image_xscale = 1.0; image_yscale = 1.0; speed = 3.0; break;
 			case 4: image_xscale = 0.9; image_yscale = 0.9; speed = 3.5; break;
@@ -49,7 +49,7 @@ if(!global.gamePaused){
 			instance_destroy();
 		}
 		
-		//Pathfinding & Collision with Player
+		// Pathfinding & Collision with Player
 		mp_potential_step_object(oPlayer.x, oPlayer.y, speed, oEnnemieWall);
 		if(x = oPlayer.x && y = oPlayer.y){speed = 0}
 		scEnnemieMelee();

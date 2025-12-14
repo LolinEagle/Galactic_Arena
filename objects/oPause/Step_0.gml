@@ -1,29 +1,29 @@
 ///@desc Pause logic
 if(global.gamePaused && room != room_first && room != room_last){
-	//Boss
+	// Boss
 	layer_hspeed("BackgroundsBoss", 0);
 	layer_hspeed("Background", 0);
 	
-	//Validate the choice
+	// Validate the choice
 	if(keyboard_check_pressed(vk_enter)){
-		//Return
+		// Return
 		if(pauseCursor = 0){global.gamePaused = false;}
 
 		#region Menu
 		if(pauseMenu){
-			//Yes(Go to Menu)
+			// Yes(Go to Menu)
 			if(pauseCursor = 10){
 				global.gamePaused = false;
 				room_goto(rTitle);
 			}
 			
-			//No(Go Back)
+			// No(Go Back)
 			if(pauseCursor = 11){scPauseMenu(0, false, false);}
 			exit;
 		}
 		if(pauseCursor = 1){scPauseMenu(10, true, true)}#endregion
 		
-		#region //Option
+		#region // Option
 		if(pauseCursor = 2){
 			scCameraGetView();
 			option = !option;
@@ -38,18 +38,18 @@ if(global.gamePaused && room != room_first && room != room_last){
 		
 		#region Quitter
 		if(pauseQuit){
-			//Yes(Quit)
+			// Yes(Quit)
 			if(pauseCursor = 10){game_end();}
 			
-			//No(Go Back)
+			// No(Go Back)
 			if(pauseCursor = 11){scPauseQuit(0, false, false);}exit;
 		}
 		if(pauseCursor = 3){scPauseQuit(10, true, true);}#endregion
 	}
 
-	//Go UP or DOWN
+	// Go UP or DOWN
 	if(!option){
-		//Press UP
+		// Press UP
 		if(
 			keyboard_check_pressed(ord(global.gameUp))
 			|| keyboard_check_pressed(vk_up)
@@ -62,7 +62,7 @@ if(global.gamePaused && room != room_first && room != room_last){
 			}
 		}
 		
-		//Press DOWN
+		// Press DOWN
 		if(
 			keyboard_check_pressed(ord(global.gameDown))
 			|| keyboard_check_pressed(vk_down)

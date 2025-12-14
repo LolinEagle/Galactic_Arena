@@ -1,6 +1,6 @@
 ///@desc Display
 if(global.gamePaused && room != room_first && room != room_last && !option){
-	//Commands
+	// Commands
 	scDrawSet(fRoboto36, fa_left, fa_bottom);
 	draw_sprite(sHudCommands, 0, 0, RES_H - 16);
 	draw_text(4, RES_H - 136, "Commands :")
@@ -11,11 +11,11 @@ if(global.gamePaused && room != room_first && room != room_last && !option){
 	draw_text(4, RES_H - 44, "Esc : Pause")
 	draw_text(4, RES_H - 20, "F1 : Fullscreen")
 	
-	//Pause
+	// Pause
 	scDrawSet(fRoboto36, fa_center, fa_middle);
 	draw_sprite(sPauseBackground, 0, RES_W_HALF, RES_H_HALF);
 	if(!pauseConfirmation){
-		//Main
+		// Main
 		draw_text(RES_W_HALF, 200, "- Pause -");
 		draw_text(RES_W_HALF, 280, "Return");
 		draw_text(RES_W_HALF, 360, "Menu");
@@ -28,7 +28,7 @@ if(global.gamePaused && room != room_first && room != room_last && !option){
 			case 3: draw_sprite(sPause, 0, 520, 520); break;
 		}
 	}else{	
-		//Pause Confirmation
+		// Pause Confirmation
 		draw_text(RES_W_HALF, 200, "Are you sure?");
 		draw_text(RES_W_HALF, 280, "Yes");
 		draw_text(RES_W_HALF, 360, "No");

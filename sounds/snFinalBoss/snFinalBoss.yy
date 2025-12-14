@@ -1,15 +1,17 @@
 {
-  "$GMSound":"",
+  "$GMSound":"v2",
   "%Name":"snFinalBoss",
   "audioGroupId":{
     "name":"OST",
     "path":"audiogroups/OST",
   },
   "bitDepth":1,
-  "bitRate":128,
+  "channelFormat":0,
   "compression":0,
+  "compressionQuality":4,
   "conversionMode":0,
   "duration":266.08826,
+  "exportDir":"",
   "name":"snFinalBoss",
   "parent":{
     "name":"OST",
@@ -20,6 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"snFinalBoss.mp3",
-  "type":0,
   "volume":1.0,
 }

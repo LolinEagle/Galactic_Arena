@@ -4,7 +4,7 @@ function scEndless(
 	_ennemieHealer, _ennemieRusher,
 	_ennemieTurret, _ennemieSpawner
 ){
-	//Start
+	// Start
 	phase = _phase;
 	if(phase > 1){
 		instance_create_layer(
@@ -15,7 +15,7 @@ function scEndless(
 		text = _textEnnemie;
 	}
 	
-	//Ennemie
+	// Ennemie
 	with(endlessEnnemie){
 		ennemie = _ennemie;
 		ennemieGunner = _ennemieGunner;

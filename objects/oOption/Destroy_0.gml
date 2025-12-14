@@ -5,7 +5,7 @@ instance_destroy(oKeyLeft);
 instance_destroy(oKeyRight);
 instance_destroy(oOptionSFX);
 
-//Ini Save
+// Ini Save
 ini_open(OPTION);
 ini_write_real("Audio", "OST", global.gameOST);
 ini_write_real("Audio", "SFX", global.gameSFX);

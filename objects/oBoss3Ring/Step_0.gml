@@ -5,7 +5,7 @@ if(!global.gamePaused){
 		image_angle++;
 	}
 	
-	//Phase Pasifism
+	// Phase Pasifism
 	if(phasePasifism && !global.levelEnded){
 		var _x1 = x - lengthdir_x(4000, image_angle - 45);
 		var _y1 = y - lengthdir_y(4000, image_angle - 45);

@@ -16,7 +16,7 @@ if(!global.gamePaused){
 	y += vspd;
 	var bbox_side;
 
-	//Horizontal
+	// Horizontal
 	if(hspd > 0){bbox_side = bbox_right;}
 	else{bbox_side = bbox_left;}
 	if(
@@ -27,7 +27,7 @@ if(!global.gamePaused){
 		else{x -= hspd;}
 	}
 
-	//Vertical
+	// Vertical
 	if(vspd > 0){bbox_side = bbox_bottom;}
 	else{bbox_side = bbox_top;}
 	if(
@@ -43,7 +43,7 @@ if(!global.gamePaused){
 	var _x = x + lengthdir_x(64, direction);
 	var _y = y + lengthdir_y(64, direction);
 
-	//Multishot
+	// Multishot
 	if(mouse_check_button(mb_left) && rateOfFire <= 0 && multishot > 0){
 		audio_play_sound(snShot, 1, 0);
 		instance_create_layer(_x, _y, "LayerOther", oShot);
@@ -59,7 +59,7 @@ if(!global.gamePaused){
 		rateOfFire = FPS * 0.15;
 	}
 
-	//Single shot
+	// Single shot
 	if(mouse_check_button(mb_left) && rateOfFire <= 0 && multishot <= 0){
 		audio_play_sound(snShot, 1, 0);
 		instance_create_layer(_x, _y, "LayerOther", oShot);
@@ -67,16 +67,16 @@ if(!global.gamePaused){
 	}#endregion
 
 	#region Player Heal
-	//Max heal
+	// Max heal
 	if(!global.gameDebug){global.healPlayer = min(300, global.healPlayer);}
 	
-	//Player Frame
+	// Player Frame
 	global.playerFrame--;
 	global.healPlayerFrame -= 1 / 3;
 	global.healPlayerFrame = max(0, global.healPlayerFrame);
 	if(global.healPlayerFrame >= 20){global.playerFrame = FPS * 3;}
 	
-	//Shader
+	// Shader
 	if(global.playerFrame > 0){
 		flashPlayer = true;
 		flashColor = shBlue;
@@ -84,10 +84,10 @@ if(!global.gamePaused){
 		flashColor = shWhite;
 	}
 	
-	//Die
+	// Die
 	if(global.healPlayer <= 0){
 		if(room != rEndless){
-			//Load Save
+			// Load Save
 			var file = file_text_open_read(SAVEFILE);
 			file_text_read_real(file);
 			global.healPlayer = file_text_read_real(file);
@@ -95,7 +95,7 @@ if(!global.gamePaused){
 			room_restart();
 		}else{
 			if(!endless){
-				//Open & Write
+				// Open & Write
 				if(global.theScore > 0){
 					var file = file_text_open_append(SCOREBOARD);
 					file_text_writeln(file);
@@ -106,10 +106,10 @@ if(!global.gamePaused){
 					file_text_write_real(file, global.pacifismMin);
 				}
 				
-				//Close
+				// Close
 				file_text_close(file);
 				
-				//Level Ended
+				// Level Ended
 				layer_destroy_instances("LayerOther");
 				layer_destroy_instances("LayerEnnemie1");
 				layer_destroy_instances("LayerEnnemie2");
@@ -118,7 +118,7 @@ if(!global.gamePaused){
 				endless = true;
 			}
 		
-			//Countdown
+			// Countdown
 			if(++global.iLevelEnded = FPS * 5){
 				global.levelEnded = false;
 				global.iLevelEnded = 0;

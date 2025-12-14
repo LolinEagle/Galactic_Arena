@@ -1,14 +1,14 @@
 ///@desc Gunner Logic
 if(!global.gamePaused){
-	//Built in variable
+	// Built in variable
 	image_angle = point_direction(x, y, oPlayer.x, oPlayer.y);
 
 	if(image_xscale < 1 && gunnerOn = false){
-		//gunnerOff
+		// gunnerOff
 		image_xscale += 1 / FPS;
 		image_yscale += 1 / FPS;
 		
-		//If probleme
+		// If probleme
 		if(place_meeting(x, y, oEnnemieWall)){
 			with(oEnnemieSpawnRandom){recreateGunner = true;}
 			instance_destroy();
@@ -16,7 +16,7 @@ if(!global.gamePaused){
 	}else{
 		gunnerOn = true;
 	
-		//Shot
+		// Shot
 		rateOfFire--;
 		if(rateOfFire <= 0){
 			audio_play_sound(snShot, 0, 0);
@@ -27,7 +27,7 @@ if(!global.gamePaused){
 			rateOfFire = FPS / 1.5;
 		}
 	
-		//Heal
+		// Heal
 		switch(hp){
 			case 5: image_xscale = 1.0; image_yscale = 1.0; speed = 5.0; break;
 			case 4: image_xscale = 0.9; image_yscale = 0.9; speed = 4.5; break;
@@ -40,11 +40,11 @@ if(!global.gamePaused){
 			instance_destroy();
 		}
 		
-		//Pathfinding
+		// Pathfinding
 		if(point_distance(x, y, oPlayer.x, oPlayer.y) < 512){speed = 0;}
 		mp_potential_step_object(oPlayer.x, oPlayer.y, speed, oEnnemieWall);
 		
-		//Collision with Player
+		// Collision with Player
 		scEnnemieMelee();
 	}
 }

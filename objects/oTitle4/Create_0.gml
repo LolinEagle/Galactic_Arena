@@ -4,7 +4,7 @@ depth = (-y / 5) + 103;
 option = false;
 selected = false;
 
-//Textbox
+// Textbox
 showText = false;
 iTitle = 0;
 xx = 0;

@@ -1,5 +1,5 @@
 if(!global.gamePaused){
-	//Roundrect
+	// Roundrect
 	draw_set_color(c_black);
 	draw_set_alpha(0.5);
 	draw_roundrect_ext(
@@ -12,7 +12,7 @@ if(!global.gamePaused){
 		false
 	);
 	
-	//Text
+	// Text
 	scDrawSet(textFont, fa_right, fa_top);
 	draw_text(xx - 10, yy - h - border, textCurrent);
 }

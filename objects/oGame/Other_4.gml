@@ -7,13 +7,13 @@ if(room != room_first){
 	global.tilemapBeam = TILE_T_WALL;
 }
 
-//Save file
+// Save file
 if(room != room_first && room != rEndless && room != room_last){
-	//Open
+	// Open
 	if(file_exists(SAVEFILE)){file_delete(SAVEFILE);}
 	var file = file_text_open_write(SAVEFILE);
 	
-	//Write & Close
+	// Write & Close
 	file_text_write_real(file, room);
 	file_text_write_real(file, global.healPlayer);
 	file_text_close(file);

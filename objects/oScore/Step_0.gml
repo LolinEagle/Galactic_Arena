@@ -3,7 +3,7 @@ if(!global.gamePaused){
 	if(room = rEndless){
 		global.ennemieSpawner = instance_number(oEnnemieSpawner);
 		
-		//Pacifism
+		// Pacifism
 		if(global.theScore = 0){
 			global.pacifismSec += 1 / FPS;
 			if(global.pacifismSec >= 60){
@@ -96,7 +96,7 @@ if(!global.gamePaused){
 		scScore(rCredit, scoreToPass, pacifismMinToPass, pacifismSecToPass);
 	}#endregion
 	
-	//Ennemie Slugger
+	// Ennemie Slugger
 	if(--ennemieSlugger <= 0 && ennemieSlugger > -1){
 		instance_create_layer(
 			oPlayer.xstart, oPlayer.ystart, "LayerEnnemie1", oEnnemieSlugger

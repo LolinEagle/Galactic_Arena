@@ -5,7 +5,7 @@ length = string_length(text);
 textCurrent = "";
 textFont = fRoboto24;
 
-//Built
+// Built
 i = 0;
 xx = RES_W_HALF;
 yy = 160;

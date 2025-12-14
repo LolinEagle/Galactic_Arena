@@ -1,6 +1,6 @@
 ///@desc Slugger logic
 if(!global.gamePaused){
-	//Size
+	// Size
 	if(image_xscale <= 0.85){
 		image_xscale += 1 / FPS;
 		image_yscale += 1 / FPS;
@@ -10,17 +10,17 @@ if(!global.gamePaused){
 		speed = 2.5;
 	}
 
-	//Pathfinding
+	// Pathfinding
 	mp_potential_step_object(oPlayer.x, oPlayer.y, speed, oEnnemieWall);
 	if(x = oPlayer.x && y = oPlayer.y){speed = 0;}
 	
-	//Reflect
+	// Reflect
 	if(hp < 0){
 		hp++;
 		audio_play_sound(snShotReflect, 0, 0);
 		instance_create_layer(x, y, "LayerEnnemie2", oEnnemieShot);
 	}
 
-	//Collision with Player
+	// Collision with Player
 	scEnnemieMelee();
 }

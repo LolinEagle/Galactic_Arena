@@ -7,7 +7,7 @@ if(!global.gamePaused){
 		case 3: bonus = oBonusMultishot; break;
 	}
 	
-	//If problem
+	// If problem
 	if(recreateBonus = true){
 		instance_create_layer(
 			irandom_range(x1, x2),
@@ -19,7 +19,7 @@ if(!global.gamePaused){
 		order++;
 	}
 	
-	//Spawn Bonus
+	// Spawn Bonus
 	spawnBonus--;
 	if(spawnBonus <= 0){
 		instance_create_layer(

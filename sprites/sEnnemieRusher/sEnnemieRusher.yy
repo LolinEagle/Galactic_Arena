@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sEnnemieRusher",
   "bboxMode":2,
   "bbox_bottom":102,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"11dd275b-59b1-413d-9ca1-e00ce3dc1e18","name":"11dd275b-59b1-413d-9ca1-e00ce3dc1e18","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"11dd275b-59b1-413d-9ca1-e00ce3dc1e18","name":"11dd275b-59b1-413d-9ca1-e00ce3dc1e18","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

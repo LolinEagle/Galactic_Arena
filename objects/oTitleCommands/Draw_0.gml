@@ -3,7 +3,7 @@ scDrawSet(fRoboto36, fa_left, fa_bottom);
 draw_set_alpha(image_alpha);
 draw_self();
 
-//Commands
+// Commands
 draw_text(4, RES_H - 136, "Commands :")
 draw_set_font(fRoboto18);
 draw_text(4, RES_H - 116, "WASD : Movement")

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sEnnemieGunner",
   "bboxMode":2,
   "bbox_bottom":103,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"a81308ae-18fd-44ee-99a1-3c9abea8ce44","name":"a81308ae-18fd-44ee-99a1-3c9abea8ce44","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a81308ae-18fd-44ee-99a1-3c9abea8ce44","name":"a81308ae-18fd-44ee-99a1-3c9abea8ce44","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

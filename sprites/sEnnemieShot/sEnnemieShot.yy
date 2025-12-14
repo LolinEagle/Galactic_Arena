@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sEnnemieShot",
   "bboxMode":0,
   "bbox_bottom":7,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f8c6e80d-078a-4036-88d3-a41459e58dad","name":"f8c6e80d-078a-4036-88d3-a41459e58dad","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"7da72e6a-e293-442b-8e53-39f5964fba1b","name":"7da72e6a-e293-442b-8e53-39f5964fba1b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f8c6e80d-078a-4036-88d3-a41459e58dad","name":"f8c6e80d-078a-4036-88d3-a41459e58dad","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7da72e6a-e293-442b-8e53-39f5964fba1b","name":"7da72e6a-e293-442b-8e53-39f5964fba1b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

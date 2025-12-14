@@ -2,7 +2,7 @@
 if(!global.gamePaused && room != room_first && room != room_last){
 	scDrawSet(fRoboto36, fa_right, fa_top);
 	if(room = rLevel1_3 || room = rLevel2_3 || room = rLevel3_3){
-		//Labyrinth
+		// Labyrinth
 		scDrawSet(fRoboto24, fa_center, fa_top);
 		draw_sprite(sHudLabyrinth, 0, RES_W_HALF + 2, 0);
 		draw_healthbar(
@@ -15,11 +15,11 @@ if(!global.gamePaused && room != room_first && room != room_last){
 			"Score : " + string(global.theScore) + " / " + string(scoreToPass)
 		);
 	}else if(room = rBoss1 || room = rBoss2 || room = rBoss3){
-		//Boss
+		// Boss
 		scHudScore();
 		scScorePacifisme();
 	}else if(room = rEndless){
-		//Endless
+		// Endless
 		scHudScore();
 		draw_set_font(fRoboto24);
 		if(global.theScore = 0){draw_set_colour(c_aqua);}
@@ -38,7 +38,7 @@ if(!global.gamePaused && room != room_first && room != room_last){
 			}
 		}
 	}else{
-		//Normal level
+		// Normal level
 		draw_sprite(sHudScore, 0, RES_W, 0);
 		var	_s = string(global.theScore) + " / " + string(scoreToPass);
 		if(global.theScore >= 100){
@@ -49,11 +49,11 @@ if(!global.gamePaused && room != room_first && room != room_last){
 			draw_text(RES_W - 8, 0, "Score : 00" + _s);
 		}
 		
-		//Pacifisme
+		// Pacifisme
 		scScorePacifisme();
 	}
 	
-	//Level Ended
+	// Level Ended
 	if(global.levelEnded){
 		draw_set_colour(c_white);
 		draw_set_alpha((global.iLevelEnded + 30) / (FPS * 5));

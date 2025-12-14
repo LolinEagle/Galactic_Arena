@@ -1,7 +1,7 @@
 scDrawSet(fRoboto24, fa_center, fa_middle);
 scDrawSpriteExt();
 
-//Key
+// Key
 switch(global.gameDown){
 	case vk_up: draw_text(x - cx, y - cy, "Up"); break;
 	case vk_down: draw_text(x - cx, y - cy, "Down"); break;
@@ -10,6 +10,6 @@ switch(global.gameDown){
 	default: draw_text(x - cx, y - cy, string(chr(global.gameDown))); break;
 }
 
-//Text
+// Text
 scDrawSet(fRoboto36, fa_left, fa_middle);
 draw_text(x - cx + 64, y - cy, "Down");

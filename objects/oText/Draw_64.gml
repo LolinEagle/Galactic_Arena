@@ -1,7 +1,7 @@
 if(!global.gamePaused){
 	var halfw = w / 2;
 
-	//Roundrect
+	// Roundrect
 	draw_set_color(c_black);
 	draw_set_alpha(0.5);
 	draw_roundrect_ext(
@@ -14,11 +14,11 @@ if(!global.gamePaused){
 		false
 	);
 	
-	//Text
+	// Text
 	scDrawSet(textFont, fa_center, fa_top);
 	draw_text(xx, yy - h - border, textCurrent);
 	
-	//Auto save text
+	// Auto save text
 	if(room != room_last){
 		draw_set_color(c_black);
 		draw_text(68, 100, textCurrentSave);

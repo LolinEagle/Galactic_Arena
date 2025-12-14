@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sTeleportationWall",
   "bboxMode":0,
   "bbox_bottom":63,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"601efe4f-2bb9-481c-a8fe-f7ae3d242ed8","name":"601efe4f-2bb9-481c-a8fe-f7ae3d242ed8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"601efe4f-2bb9-481c-a8fe-f7ae3d242ed8","name":"601efe4f-2bb9-481c-a8fe-f7ae3d242ed8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

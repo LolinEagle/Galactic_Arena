@@ -1,13 +1,13 @@
 ///@desc Logic
 
-//Image alpha
+// Image alpha
 if(image_alpha < 1){
 	image_alpha += 0.25 / FPS;
 }else{
 	image_alpha = 1;
 }
 
-//Image index & Show text
+// Image index & Show text
 if(place_meeting(x, y, oCursor) && image_index != 2){
 	image_index = 1;
 	showText = true;

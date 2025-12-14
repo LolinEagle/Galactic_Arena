@@ -1,13 +1,13 @@
 ///@desc Boss 2 Logic
 if(!global.gamePaused){
-	//If Level not Ended
+	// If Level not Ended
 	if(!global.levelEnded){
 		image_angle -= 3;
 		
-		//Collision with Player
+		// Collision with Player
 		scEnnemieMelee();
 		
-		//Phase 2
+		// Phase 2
 		var _if = global.pacifismMin >= 3 && global.pacifismSec >= 30;
 		if(global.healBoss <= 180 || _if) && (phaseTwo = false){
 			layer_destroy_instances("LayerEnnemie2");
@@ -16,14 +16,14 @@ if(!global.gamePaused){
 			phaseTwo = true;
 		}
 		
-		//Die
+		// Die
 		if(global.healBoss <= 0){global.levelEnded = true;}
 	}
 
-	//If Level Ended
+	// If Level Ended
 	if(global.levelEnded){
 		if(global.healBoss <= 0){
-			//Explosion
+			// Explosion
 			if(++iFx = FPS / 3 && global.iLevelEnded < FPS * 3){
 				audio_play_sound(snExplosion, 0, false);
 				effect_create_above(
@@ -36,7 +36,7 @@ if(!global.gamePaused){
 				iFx = 0;
 			}
 		}else{
-			//Pacifism
+			// Pacifism
 			if(++iFx = FPS / 3 && global.iLevelEnded < FPS * 3){
 				audio_play_sound(snTeleportation, 0, false);
 				effect_create_above(

@@ -12,7 +12,7 @@ if(!global.gamePaused){
 		instance_destroy();
 	}
 	
-	//Ennemie Healer
+	// Ennemie Healer
 	if(place_meeting(x, y, oEnnemieHealer)){
 		with(instance_place(x, y, oEnnemieHealer)){
 			hp--;
@@ -21,7 +21,7 @@ if(!global.gamePaused){
 		instance_destroy();
 	}
 	
-	//Ennemie Wall
+	// Ennemie Wall
 	if(place_meeting(x, y, oEnnemieWall)){
 		with(instance_place(x, y, oEnnemieWall)){
 			if(!canPass){instance_destroy(other);}

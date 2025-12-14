@@ -1,13 +1,13 @@
 ///@desc Boss 1 Logic
 if(!global.gamePaused){
-	//If Level not Ended
+	// If Level not Ended
 	if(!global.levelEnded){
 		direction = point_direction(x, y, oPlayer.x, oPlayer.y);
 		
-		//Collision with Player
+		// Collision with Player
 		scEnnemieMelee();
 		
-		//Phase 2
+		// Phase 2
 		if(global.healBoss <= 120 || global.pacifismMin >= 2){
 			with(oEnnemieSpawnRandom){
 				ennemie = false
@@ -16,14 +16,14 @@ if(!global.gamePaused){
 			}
 		}
 		
-		//Die
+		// Die
 		if(global.healBoss <= 0){global.levelEnded = true;}
 	}
 
-	//If Level Ended
+	// If Level Ended
 	if(global.levelEnded){
 		if(global.healBoss <= 0){
-			//Explosion
+			// Explosion
 			if(++iFx = FPS / 3 && global.iLevelEnded < FPS * 3){
 				audio_play_sound(snExplosion, 0, false);
 				effect_create_above(
@@ -36,7 +36,7 @@ if(!global.gamePaused){
 				iFx = 0;
 			}
 		}else{
-			//Pacifism
+			// Pacifism
 			if(++iFx = FPS / 3 && global.iLevelEnded < FPS * 3){
 				audio_play_sound(snTeleportation, 0, false);
 				effect_create_above(

@@ -12,7 +12,7 @@ if(!global.gamePaused){
 	}else{
 		rusherOn = true;
 	
-		//Heal
+		// Heal
 		switch(hp){
 			case 5: image_xscale = 0.700; image_yscale = 0.700; break;
 			case 4: image_xscale = 0.775; image_yscale = 0.775; break;
@@ -25,10 +25,10 @@ if(!global.gamePaused){
 			instance_destroy();
 		}
 		
-		//Pathfinding
+		// Pathfinding
 		mp_potential_step_object(oPlayer.x, oPlayer.y, speed, oEnnemieWall);
 		
-		//Near Player
+		// Near Player
 		if(point_distance(x, y, oPlayer.x, oPlayer.y) < DIAGONAL){
 			rusherNear = true;
 		}
@@ -40,7 +40,7 @@ if(!global.gamePaused){
 			}
 		}
 		
-		//Collision with Player
+		// Collision with Player
 		if(place_meeting(x, y, oPlayer)){
 			with(oPlayer){flashPlayer = true;}
 			if(global.playerFrame <= 0){
@@ -48,7 +48,7 @@ if(!global.gamePaused){
 				global.healPlayer -= 10;
 			}
 			
-			//Explosion
+			// Explosion
 			audio_play_sound(snExplosion, 0, false);
 			effect_create_above(ef_explosion, x, y, 256, c_red);
 			instance_destroy();

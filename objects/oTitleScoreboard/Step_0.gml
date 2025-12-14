@@ -1,14 +1,14 @@
 ///@desc Read Score & Time
 
-//Image alpha
+// Image alpha
 if(image_alpha < 1){image_alpha += 0.25 / FPS;}
 else{image_alpha = 1;}
 
-//Read Score
+// Read Score
 if(scoreBoard && !scoreBoardReaded){
 	var fileScore = file_text_open_read(SCOREBOARD);
 	if(fileScore != -1){
-		//Read
+		// Read
 		var i = 0;
 		while(!file_text_eof(fileScore)){
 			scrScore[i] = file_text_read_real(fileScore);
@@ -16,19 +16,19 @@ if(scoreBoard && !scoreBoardReaded){
 			i++;
 		}
 		
-		//Sort & Close
+		// Sort & Close
 		array_sort(scrScore, false);
 		file_text_close(fileScore);
 		scoreBoardReaded = true;
 	}
 }
 
-//Read Time
+// Read Time
 if(timeBoard && !timeBoardReaded){
 	var fileTime = file_text_open_read(TIMEBOARD);
 	
 	if(fileTime != -1){		
-		//Read
+		// Read
 		var i = 0;
 		while(!file_text_eof(fileTime)){
 			scrTime[i] = file_text_read_real(fileTime);
@@ -36,7 +36,7 @@ if(timeBoard && !timeBoardReaded){
 			i++;
 		}
 
-		//Sort & Close
+		// Sort & Close
 		array_sort(scrTime, false);
 		file_text_close(fileTime);
 		timeBoardReaded = true;

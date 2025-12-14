@@ -4,19 +4,19 @@ surface_resize(application_surface, RES_W, RES_H);
 audio_group_load(OST);
 audio_group_load(SFX);
 
-//Persistents
+// Persistents
 instance_create_layer(0, 0, layer, oCursor);
 instance_create_layer(0, 0, layer, oCamera);
 instance_create_layer(0, 0, layer, oPause);
 instance_create_layer(0, 0, layer, oScore);
 
-//Globals Variable
+// Globals Variable
 global.gameDebug = false;
 global.gamePaused = false;
 global.healPlayer = 0;
 global.tilemapBeam = 0;
 
-//Option
+// Option
 if(!file_exists(OPTION)){
 	global.gameOST = 0.5;
 	global.gameSFX = 0.5;

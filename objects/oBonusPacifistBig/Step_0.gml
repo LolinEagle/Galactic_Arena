@@ -5,7 +5,7 @@ if(!global.gamePaused){
 	var _xx = x + lengthdir_x(32, direction);
 	var _yy = y + lengthdir_y(32, direction);
 	
-	//Effect
+	// Effect
 	if(++iEffect = 15){
 		effect_create_below(ef_ring, _xx, _yy, 1, c_white);
 		iEffect = 0;

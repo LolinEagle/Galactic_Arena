@@ -3,11 +3,11 @@ function scHudBoss(){
 		scDrawSet(fRoboto36, fa_left, fa_middle);
 		draw_sprite(sHudBoss, 0, 0, RES_H);
 
-		//Text
+		// Text
 		draw_set_color(c_red);
 		draw_text(8, RES_H - 84, "Boss");
 
-		//Heal Bar
+		// Heal Bar
 		var _y1 = RES_H - 56;
 		var _y2 = RES_H - 8;
 		var _amount = global.healBoss / 3;
