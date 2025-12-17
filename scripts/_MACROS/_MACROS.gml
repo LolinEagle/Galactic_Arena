@@ -20,7 +20,7 @@
 
 // Title & Tile Beam & Balancing
 #macro VERSION "v 1.2.0"
-#macro CREDIT RES_H / 13
+#macro CREDIT (RES_H / 13)
 #macro SPAWN_RATE 1.5
 #macro BONUS_BOSS 32
 #macro TILE_T_WALL layer_tilemap_get_id("TileTeleportationWall")

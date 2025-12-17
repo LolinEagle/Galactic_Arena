@@ -10,7 +10,10 @@ if(!global.gamePaused){
 	}
 	
 	// Instance change & Max
-	if(image_xscale >= 1){instance_change(oEnnemie, true);}
+	if(image_xscale >= 1){
+		instance_destroy();
+		instance_create_layer(x, y, layer, oEnnemie);
+	}
 	image_xscale = max(0, image_xscale);
 	image_yscale = max(0, image_yscale);
 	
