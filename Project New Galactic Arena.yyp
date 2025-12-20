@@ -2,9 +2,9 @@
   "$GMProject":"v1",
   "%Name":"Project New Galactic Arena",
   "AudioGroups":[
-    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
-    {"$GMAudioGroup":"","%Name":"OST","name":"OST","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
-    {"$GMAudioGroup":"","%Name":"SFX","name":"SFX","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"v1","%Name":"OST","exportDir":"","name":"OST","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"v1","%Name":"SFX","exportDir":"","name":"SFX","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
   "configs":{
     "children":[],
@@ -48,7 +48,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.2.212",
+    "IDEVersion":"2024.14.2.213",
   },
   "name":"Project New Galactic Arena",
   "resources":[
@@ -135,6 +135,7 @@
     {"id":{"name":"rTitle","path":"rooms/rTitle/rTitle.yy",},},
     {"id":{"name":"_MACROS","path":"scripts/_MACROS/_MACROS.yy",},},
     {"id":{"name":"Boss3","path":"scripts/Boss3/Boss3.yy",},},
+    {"id":{"name":"EffectCreate","path":"scripts/EffectCreate/EffectCreate.yy",},},
     {"id":{"name":"scCameraGetView","path":"scripts/scCameraGetView/scCameraGetView.yy",},},
     {"id":{"name":"scDrawSet","path":"scripts/scDrawSet/scDrawSet.yy",},},
     {"id":{"name":"scDrawSpriteExt","path":"scripts/scDrawSpriteExt/scDrawSpriteExt.yy",},},

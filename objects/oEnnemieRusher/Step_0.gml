@@ -36,7 +36,7 @@ if(image_xscale < 0.7 && rusherOn = false){
 	if(rusherNear){
 		if(++i = FPS * 6){
 			audio_play_sound(snTeleportation, 0, false);
-			effect_create_above(ef_ring, x, y, 256, c_blue);
+			scEffectCreateAbove(ef_ring, x, y, 256, c_blue);
 			instance_destroy();
 		}
 	}
@@ -51,7 +51,7 @@ if(image_xscale < 0.7 && rusherOn = false){
 		
 		// Explosion
 		audio_play_sound(snExplosion, 0, false);
-		effect_create_above(ef_explosion, x, y, 256, c_red);
+		scEffectCreateAbove(ef_explosion, x, y, 256, c_red);
 		instance_destroy();
 	}
 }

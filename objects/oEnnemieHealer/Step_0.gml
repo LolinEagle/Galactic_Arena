@@ -18,7 +18,7 @@ if(image_xscale < 1 && HealerOn = false){
 		if(--rateOfFire <= 0){
 			// Audio & Effect
 			audio_play_sound(snHealer, 0, 0);
-			effect_create_above(ef_ring, x, y, DIAGONAL, c_red);
+			scEffectCreateAbove(ef_ring, x, y, DIAGONAL, c_red);
 		
 			// Heal & Reset
 			var _list = ds_list_create();

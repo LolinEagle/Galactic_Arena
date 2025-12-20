@@ -8,6 +8,6 @@ var _yy = y + lengthdir_y(32, direction);
 
 // Effect
 if(++iEffect = 15){
-	effect_create_below(ef_ring, _xx, _yy, 1, c_white);
+	scEffectCreateBelow(ef_ring, _xx, _yy, 1, c_white);
 	iEffect = 0;
 }

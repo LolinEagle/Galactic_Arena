@@ -101,15 +101,14 @@ if(global.healPlayer <= 0){
 				var file = file_text_open_append(SCOREBOARD);
 				file_text_writeln(file);
 				file_text_write_real(file, global.theScore);
+				file_text_close(file);
 			}else{
 				var file = file_text_open_append(TIMEBOARD);
 				file_text_writeln(file);
 				file_text_write_real(file, global.pacifismMin);
+				file_text_close(file);
 			}
-			
-			// Close
-			file_text_close(file);
-			
+
 			// Level Ended
 			layer_destroy_instances("LayerOther");
 			layer_destroy_instances("LayerEnnemie1");

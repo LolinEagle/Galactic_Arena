@@ -70,6 +70,7 @@
     {"name":"rParent","order":2,"path":"rooms/rParent/rParent.yy",},
     {"name":"rTitle","order":3,"path":"rooms/rTitle/rTitle.yy",},
     {"name":"Boss3","order":15,"path":"scripts/Boss3/Boss3.yy",},
+    {"name":"EffectCreate","order":19,"path":"scripts/EffectCreate/EffectCreate.yy",},
     {"name":"scCameraGetView","order":10,"path":"scripts/scCameraGetView/scCameraGetView.yy",},
     {"name":"scDrawSet","order":6,"path":"scripts/scDrawSet/scDrawSet.yy",},
     {"name":"scDrawSpriteExt","order":16,"path":"scripts/scDrawSpriteExt/scDrawSpriteExt.yy",},

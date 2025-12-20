@@ -91,7 +91,7 @@ if(global.levelEnded){
 		// Explosion
 		if(++iFx = FPS / 3 && global.iLevelEnded < FPS * 3){
 			audio_play_sound(snExplosion, 0, false);
-			effect_create_above(
+			scEffectCreateAbove(
 				ef_explosion,
 				x + random_range(-256, 256),
 				y + random_range(-256, 256),
@@ -104,7 +104,7 @@ if(global.levelEnded){
 		// Pacifism
 		if(++iFx = FPS / 3 && global.iLevelEnded < FPS * 3){
 			audio_play_sound(snTeleportation, 0, false);
-			effect_create_above(
+			scEffectCreateAbove(
 				ef_ring,
 				x + random_range(-256, 256),
 				y + random_range(-256, 256),
@@ -131,7 +131,7 @@ if(phaseEndless){
 		// Explosion
 		if(++iFx = FPS / 3 && iEndless < FPS * 3){
 			audio_play_sound(snExplosion, 0, false);
-			effect_create_above(
+			scEffectCreateAbove(
 				ef_explosion,
 				x + random_range(-256, 256),
 				y + random_range(-256, 256),
@@ -144,7 +144,7 @@ if(phaseEndless){
 		// Pacifism
 		if(++iFx = FPS / 3 && iEndless < FPS * 3){
 			audio_play_sound(snTeleportation, 0, false);
-			effect_create_above(
+			scEffectCreateAbove(
 				ef_ring,
 				x + random_range(-256, 256),
 				y + random_range(-256, 256),
