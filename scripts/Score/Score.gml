@@ -1,6 +1,6 @@
 function scScore(_targetRoom, _score, _pasiMin, _pasiSec){
 	// Pacifism
-	if(!global.levelEnded && global.theScore = 0){
+	if(!global.levelEnded && global.theScore == 0){
 		global.pacifismSec += 1 / FPS;
 		if(global.pacifismSec >= 60){
 			global.pacifismSec -= 60;

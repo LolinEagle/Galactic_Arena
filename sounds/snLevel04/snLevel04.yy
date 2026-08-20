@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":41.141,
+  "duration":41.11299,
   "exportDir":"",
   "name":"snLevel04",
   "parent":{

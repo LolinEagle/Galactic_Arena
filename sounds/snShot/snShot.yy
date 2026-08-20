@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.782868,
+  "duration":0.7778685,
   "exportDir":"",
   "name":"snShot",
   "parent":{

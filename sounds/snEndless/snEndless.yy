@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":220.0637,
+  "duration":220.05551,
   "exportDir":"",
   "name":"snEndless",
   "parent":{

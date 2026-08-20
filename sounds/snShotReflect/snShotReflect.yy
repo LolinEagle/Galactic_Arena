@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.202551,
+  "duration":0.19755103,
   "exportDir":"",
   "name":"snShotReflect",
   "parent":{
