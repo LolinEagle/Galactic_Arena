@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.46305,
+  "duration":0.4580499,
   "exportDir":"",
   "name":"snTeleportation",
   "parent":{

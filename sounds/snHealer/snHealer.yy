@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.284252,
+  "duration":0.2792517,
   "exportDir":"",
   "name":"snHealer",
   "parent":{

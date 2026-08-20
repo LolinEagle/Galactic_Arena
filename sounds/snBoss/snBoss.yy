@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":131.00917,
+  "duration":131.00417,
   "exportDir":"",
   "name":"snBoss",
   "parent":{

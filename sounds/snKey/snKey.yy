@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.765317,
+  "duration":0.76031744,
   "exportDir":"",
   "name":"snKey",
   "parent":{
