@@ -4,6 +4,10 @@ if(!file_exists(SAVEFILE)){
 }else{
 	// Load Save
 	var _file = file_text_open_read(SAVEFILE);
+	if(_file == -1){
+		image_index = 2;
+		return;
+	}
 	var _room = file_text_read_real(_file);
 	global.healPlayer = file_text_read_real(_file);
 	file_text_close(_file);
